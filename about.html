@@ -1,0 +1,194 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About Us</title>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Great+Vibes&display=swap" rel="stylesheet">
+    <style>
+        /* General Styles */
+        body {
+            background: linear-gradient(to bottom, #fff5e6, #ffdab3);
+            font-family: 'Arial', sans-serif;
+            margin: 0;
+            padding: 0;
+        }
+
+        .custom-font {
+            font-family: 'Great Vibes', cursive;
+            font-size: 3rem;
+            color: #b45f06;
+        }
+
+        .container {
+            max-width: 1100px;
+            margin: 0 auto;
+            padding: 20px;
+        }
+
+        /* Header & Navigation */
+        header {
+            background: rgba(255, 255, 255, 0.9);
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+            padding: 15px 0;
+            position: sticky;
+            top: 0;
+            width: 100%;
+            z-index: 1000;
+        }
+
+        nav {
+            display: flex;
+            justify-content: center;
+        }
+
+        ul {
+            display: flex;
+            gap: 20px;
+            list-style: none;
+            padding: 0;
+            margin: 0;
+        }
+
+        ul li a {
+            color: #8a4b08;
+            text-decoration: none;
+            font-size: 18px;
+            font-weight: bold;
+            transition: color 0.3s, transform 0.2s;
+        }
+
+        ul li a:hover {
+            color: #b45f06;
+            transform: scale(1.1);
+        }
+
+        /* About Section */
+        h1 {
+            text-align: center;
+            margin-bottom: 20px;
+            text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.1);
+        }
+
+        .divider {
+            width: 50px;
+            height: 4px;
+            background-color: #b45f06;
+            margin: 0 auto 20px;
+        }
+
+        .about-section {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            text-align: center;
+            background: rgba(255, 255, 255, 0.8);
+            padding: 30px;
+            border-radius: 12px;
+            box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.1);
+            transition: transform 0.3s ease-in-out;
+        }
+
+        .about-section:hover {
+            transform: scale(1.02);
+        }
+
+        @media (min-width: 768px) {
+            .about-section {
+                flex-direction: row;
+                text-align: left;
+                padding: 40px;
+            }
+        }
+
+        .about-section img {
+            width: 100%;
+            max-width: 400px;
+            border-radius: 12px;
+            box-shadow: 4px 4px 12px rgba(0, 0, 0, 0.2);
+            transition: transform 0.3s ease-in-out;
+        }
+
+        .about-section img:hover {
+            transform: scale(1.05);
+        }
+
+        @media (min-width: 768px) {
+            .about-section img {
+                margin-right: 30px;
+                margin-bottom: 0;
+            }
+        }
+
+        .about-text {
+            max-width: 700px;
+        }
+
+        .about-text p {
+            color: #5a3d1a;
+            font-size: 17px;
+            margin-bottom: 15px;
+            line-height: 1.6;
+            text-align: justify;
+        }
+
+        .about-text strong {
+            color: #b45f06;
+        }
+
+        .explore-btn {
+            display: block;
+            width: fit-content;
+            margin: 20px auto;
+            background-color: #b45f06;
+            color: white;
+            padding: 10px 20px;
+            font-size: 18px;
+            border-radius: 8px;
+            text-decoration: none;
+            transition: background 0.3s ease-in-out;
+        }
+
+        .explore-btn:hover {
+            background-color: #8a4b08;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="menu.html">Menu</a></li>
+                <li><a href="contact.html">Reach out</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main class="container">
+        <h1 class="custom-font">About Us</h1>
+        <div class="divider"></div>
+
+        <div class="about-section">
+            <img src="restaurant-2623071_1920.jpg" alt="Restaurant Interior">
+            <div class="about-text">
+                <p>
+                    Welcome to <strong>Punjab Restaurant</strong>, where tradition meets taste. We take pride in serving authentic Indian cuisine with rich flavors and fresh ingredients. 
+                    Our recipes have been passed down through generations, offering a blend of traditional spices and modern culinary expertise.
+                </p>
+                <p>
+                    Established in the heart of Westlands, our restaurant is a warm and inviting space perfect for families, friends, and food lovers alike. Whether you're here 
+                    for a quick lunch, a cozy dinner, or a festive celebration, we promise an unforgettable dining experience.
+                </p>
+                <p>
+                    We are dedicated to providing the highest quality food and service, ensuring every meal is a delight. Come and taste the true essence of India at Punjab Restaurant!
+                </p>
+            </div>
+        </div>
+
+        <a href="menu.html" class="explore-btn">Explore Our Menu</a>
+    </main>
+</body>
+</html>

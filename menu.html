@@ -1,0 +1,231 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Menu</title>
+    <link href="https://fonts.googleapis.com/css2?family=Great+Vibes&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+    <style>
+        body {
+            background: linear-gradient(to bottom, #fff5e6, #ffdab3);
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            color: #4a5568;
+        }
+
+        .custom-font {
+            font-family: 'Great Vibes', cursive;
+            font-size: 3rem;
+            color: #b45f06;
+            text-align: center;
+        }
+
+        .container {
+            max-width: 1100px;
+            margin: 0 auto;
+            padding: 20px;
+        }
+
+        header {
+            background-color: white;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+            padding: 15px 0;
+            position: sticky;
+            top: 0;
+            width: 100%;
+            z-index: 1000;
+        }
+
+        nav {
+            display: flex;
+            justify-content: center;
+        }
+
+        ul {
+            display: flex;
+            gap: 20px;
+            list-style: none;
+            padding: 0;
+            margin: 0;
+        }
+
+        ul li a {
+            color: #8a4b08;
+            text-decoration: none;
+            font-size: 18px;
+            font-weight: bold;
+            transition: color 0.3s, transform 0.2s;
+        }
+
+        ul li a:hover {
+            color: #b45f06;
+            transform: scale(1.1);
+        }
+
+        h1 {
+            text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.1);
+        }
+
+        .grid {
+            display: grid;
+            gap: 20px;
+        }
+
+        @media (min-width: 768px) {
+            .grid-cols-3 {
+                grid-template-columns: repeat(3, 1fr);
+            }
+        }
+
+        .card {
+            border-radius: 12px;
+            overflow: hidden;
+            box-shadow: 4px 4px 12px rgba(0, 0, 0, 0.2);
+            background: rgba(255, 255, 255, 0.8);
+            padding: 20px;
+            transition: transform 0.3s ease-in-out;
+            text-align: center;
+        }
+
+        .card:hover {
+            transform: scale(1.05);
+        }
+
+        .card img {
+            width: 100%;
+            height: 200px;
+            object-fit: cover;
+            border-radius: 10px;
+        }
+
+        .card-content {
+            padding: 15px;
+        }
+
+        h3 {
+            font-size: 1.5rem;
+            color: #b45f06;
+            margin-bottom: 5px;
+        }
+
+        p {
+            color: #5a3d1a;
+            margin: 5px 0;
+        }
+
+        .price {
+            font-weight: bold;
+            color: black;
+            margin-top: 10px;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="menu.html">Menu</a></li>
+                <li><a href="contact.html">Reach out</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main class="container">
+        <h1 class="custom-font">Punjab Menu</h1>
+
+        <section>
+            <h2>Appetizers</h2>
+            <div class="grid grid-cols-3">
+                <div class="card">
+                    <img src="samosas.jpg" alt="Samosa">
+                    <div class="card-content">
+                        <h3>Samosa</h3>
+                        <p>Crispy deep-fried snack with savory filling.</p>
+                        <p class="price">$5.00</p>
+                    </div>
+                </div>
+                <div class="card">
+                    <img src="p.tikka.jpg" alt="Paneer Tikka">
+                    <div class="card-content">
+                        <h3>Paneer Tikka</h3>
+                        <p>Grilled marinated paneer cubes.</p>
+                        <p class="price">$8.00</p>
+                    </div>
+                </div>
+                <div class="card">
+                    <img src="aloo.jpg" alt="Aloo Tikki">
+                    <div class="card-content">
+                        <h3>Aloo Tikki</h3>
+                        <p>Spiced potato patties with chutney.</p>
+                        <p class="price">$6.00</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section>
+            <h2>Main Courses</h2>
+            <div class="grid grid-cols-3">
+                <div class="card">
+                    <img src="butter chicken.jpg" alt="Butter Chicken">
+                    <div class="card-content">
+                        <h3>Butter Chicken</h3>
+                        <p>Chicken in creamy tomato sauce.</p>
+                        <p class="price">$15.00</p>
+                    </div>
+                </div>
+                <div class="card">
+                    <img src="biryani.jpg" alt="Biryani">
+                    <div class="card-content">
+                        <h3>Biryani</h3>
+                        <p>Aromatic rice with spices and meat/vegetables.</p>
+                        <p class="price">$14.00</p>
+                    </div>
+                </div>
+                <div class="card">
+                    <img src="paneer butter.jpg" alt="Paneer Butter Masala">
+                    <div class="card-content">
+                        <h3>Paneer Butter Masala</h3>
+                        <p>Paneer cubes in a rich tomato gravy.</p>
+                        <p class="price">$12.00</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section>
+            <h2>Desserts</h2>
+            <div class="grid grid-cols-3">
+                <div class="card">
+                    <img src="gulab jamun.jpg" alt="Gulab Jamun">
+                    <div class="card-content">
+                        <h3>Gulab Jamun</h3>
+                        <p>Milk-solid-based sweet soaked in syrup.</p>
+                        <p class="price">$5.00</p>
+                    </div>
+                </div>
+                <div class="card">
+                    <img src="kheer.jpg" alt="Kheer">
+                    <div class="card-content">
+                        <h3>Kheer</h3>
+                        <p>Creamy rice pudding with cardamom.</p>
+                        <p class="price">$4.00</p>
+                    </div>
+                </div>
+                <div class="card">
+                    <img src="ras malai.jpg" alt="Ras Malai">
+                    <div class="card-content">
+                        <h3>Ras Malai</h3>
+                        <p>Soft paneer balls in sweetened milk.</p>
+                        <p class="price">$6.00</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+</body>
+</html>

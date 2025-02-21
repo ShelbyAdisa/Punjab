@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Us</title>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Great+Vibes&display=swap" rel="stylesheet">
+    <style>
+        body {
+            background: linear-gradient(to bottom, #fff5e6, #ffdab3);
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+        }
+
+        .custom-font {
+            font-family: 'Great Vibes', cursive;
+            font-size: 3rem;
+            color: #b45f06;
+            text-align: center;
+        }
+
+        .container {
+            max-width: 1100px;
+            margin: 0 auto;
+            padding: 20px;
+        }
+
+        header {
+            background: rgba(255, 255, 255, 0.9);
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+            padding: 15px 0;
+            position: sticky;
+            top: 0;
+            width: 100%;
+            z-index: 1000;
+        }
+
+        nav {
+            display: flex;
+            justify-content: center;
+        }
+
+        ul {
+            display: flex;
+            gap: 20px;
+            list-style: none;
+            padding: 0;
+            margin: 0;
+        }
+
+        ul li a {
+            color: #8a4b08;
+            text-decoration: none;
+            font-size: 18px;
+            font-weight: bold;
+            transition: color 0.3s, transform 0.2s;
+        }
+
+        ul li a:hover {
+            color: #b45f06;
+            transform: scale(1.1);
+        }
+
+        h1 {
+            text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.1);
+        }
+
+        .grid {
+            display: grid;
+            gap: 20px;
+        }
+
+        @media (min-width: 768px) {
+            .grid-cols-2 {
+                grid-template-columns: repeat(2, 1fr);
+            }
+        }
+
+        .box {
+            border-radius: 12px;
+            overflow: hidden;
+            box-shadow: 4px 4px 12px rgba(0, 0, 0, 0.2);
+            background: rgba(255, 255, 255, 0.8);
+            padding: 20px;
+            transition: transform 0.3s ease-in-out;
+        }
+
+        .box:hover {
+            transform: scale(1.02);
+        }
+
+        h2 {
+            font-size: 2rem;
+            color: #b45f06;
+            text-align: center;
+            margin-bottom: 20px;
+        }
+
+        label {
+            font-size: 16px;
+            color: #5a3d1a;
+            display: block;
+            margin-bottom: 5px;
+        }
+
+        input, textarea {
+            width: 80%;
+            max-width: 400px;
+            padding: 10px;
+            border: 1px solid #b45f06;
+            border-radius: 5px;
+            margin-bottom: 15px;
+            font-size: 16px;
+        }
+
+        button {
+            background-color: #b45f06;
+            color: white;
+            padding: 10px 25px;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            font-size: 16px;
+            transition: background 0.3s;
+        }
+
+        button:hover {
+            background-color: #8a4b08;
+        }
+
+        .contact-info p {
+            color: #5a3d1a;
+            font-size: 16px;
+            margin-bottom: 10px;
+            display: flex;
+            align-items: center;
+        }
+
+        .contact-info i {
+            color: #b45f06;
+            margin-right: 10px;
+            font-size: 18px;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="menu.html">Menu</a></li>
+                <li><a href="contact.html">Reach out</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main class="container">
+        <h1 class="custom-font">Contact Us</h1>
+        <p style="text-align: center; color: #5a3d1a;">We'd love to hear from you! Reach out through any of the options below.</p>
+
+        <div class="grid grid-cols-2">
+            <div class="box">
+                <h2>Send us a message</h2>
+                <form>
+                    <label for="name">Name</label>
+                    <input type="text" id="name" placeholder="Your Name">
+                    <label for="email">Email</label>
+                    <input type="email" id="email" placeholder="Your Email">
+                    <label for="message">Message</label>
+                    <textarea id="message" rows="4" placeholder="Your Message"></textarea>
+                    <button type="submit">Send</button>
+                </form>
+            </div>
+            <div class="box contact-info">
+                <h2>Get in touch</h2>
+                <p><i class="fas fa-map-marker-alt"></i> 123 Main Street, Westlands, Punjab</p>
+                <p><i class="fas fa-phone"></i> +1 (234) 567-890</p>
+                <p><i class="fas fa-envelope"></i> contact@punjabrestaurant.com</p>
+                <p><i class="fas fa-clock"></i> Mon-Sun: 10:00 AM - 10:00 PM</p>
+            </div>
+        </div>
+    </main>
+</body>
+</html>
